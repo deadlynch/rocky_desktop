@@ -1,6 +1,6 @@
 # Tutorial Pós-instalação — Workstation Corporativa Linux
 
-## Rocky Linux 10.1 — Ambiente KDE Plasma
+## Rocky Linux 10.1 Desktop — Ambiente KDE Plasma
 
 ---
 
@@ -19,7 +19,7 @@ Este documento descreve o procedimento técnico padrão de pós-instalação do 
 **Não inclui:**
 
 * Servidores
-* Uso pessoal ou doméstico
+* Uso pessoal ou doméstico (mas pode ser adaptado)
 * Dual boot
 * Hardening avançado de kernel
 
@@ -179,7 +179,7 @@ sudo dnf install -y realmd sssd oddjob oddjob-mkhomedir adcli samba-common-tools
 ### 10.2 Ingresso no domínio
 
 ```bash
-sudo realm join --user=<usuario_administrador_ad> ademicon.local
+sudo realm join --user=<usuario_administrador_ad> dominio.local
 ```
 
 ### 10.3 Validação
@@ -201,7 +201,7 @@ sudo nano /etc/sddm.conf
 Adicionar ou ajustar:
 
 ```ini
-HideUsers=sysadmin (ocultar conta de admin local)
+HideUsers=(ocultar conta de admin local que foi criado na instalação)
 MaximumUid=1000
 ```
 
@@ -302,5 +302,5 @@ Checklist de conferência pós-configuração:
 Arquivo: README.md
 Versão: 1.1
 Última revisão: 2026-01-17
-Responsável: Infraestrutura
+Responsável: Edson Batista do Carmo Junior
 ```
