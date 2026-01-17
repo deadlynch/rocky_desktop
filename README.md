@@ -6,7 +6,7 @@
 
 ## 1. Objetivo
 
-Este documento descreve o procedimento técnico padrão de pós-instalação do **Rocky Linux 10.1 com ambiente gráfico KDE Plasma**, aplicado em estações corporativas. O objetivo é garantir que o sistema esteja atualizado, seguro, integrado ao domínio Active Directory e com os softwares corporativos necessários instalados.
+Este documento descreve o procedimento técnico padrão de pós-instalação do **Rocky Linux 10.1 com ambiente gráfico KDE Plasma**, aplicado em estações de trabalho corporativas. O objetivo é garantir que o sistema esteja devidamente atualizado, seguro, integrado ao domínio Active Directory e com os softwares corporativos necessários instalados. Quando houver necessidade de compatibilidade com aplicações restritas ao ecossistema Microsoft, recomenda-se a utilização de uma máquina virtual Windows ou de um servidor Windows Server com Remote Desktop Services habilitado, a fim de manter a produtividade dos usuários finais.
 
 ### Escopo
 
